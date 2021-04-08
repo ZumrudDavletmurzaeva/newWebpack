@@ -1,0 +1,141 @@
+
+.header-menu{
+  display: flex;
+  flex-direction: row;
+  height: 88px;
+  align-items: center;
+  border-bottom: 1px solid #D9FFF5;
+  @media screen and (min-width:1366px) {
+      display: none;
+    }
+  
+}
+
+.header-menu__btn{
+  width:40px;
+  height:40px;
+  padding-left: 0px;
+  padding-right: 0px;
+  border:none;
+  box-sizing: border-box;
+  background-color:transparent;
+  flex-shrink: 0;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.header-menu-icon{
+  margin-left: 8px;
+  margin-right: 8px;
+
+  &:first-of-type{
+    @media screen and (max-width:767px){
+    margin-left: 16px;
+    margin-right: 8px;
+  }
+
+  @media screen and (min-width:768px)  and (max-width:1365px){
+    margin-left: 24px;
+    margin-right: 8px;
+  }
+}
+  &:last-of-type{
+    @media screen and  (max-width:767px){
+    margin-right: 16px;
+    margin-left: 8px;
+    }
+
+    @media screen and (min-width:768px)  and (max-width:1365px){
+      margin-left: 8px;
+      margin-right: 24px;
+    }
+  }
+  }
+ 
+
+
+
+.menu-icon{
+  margin-left: 8px;
+  margin-right: 8px;
+  flex-shrink: 0;
+
+  @media screen and (max-width:767px){
+    display: none;
+  }
+}
+
+.header-menu-divide{
+  width: 2px;
+  height: 32px;
+  background-color: #EAEAEA;
+  margin-right: 8px;
+  margin-left: 8px;
+  flex-shrink: 0;
+
+  @media screen and (max-width:767px){
+    display: none;
+  }
+
+}
+
+.header-menu-divide2{
+  width: 2px;
+  height: 32px;
+  background-color: #EAEAEA;
+  margin-right: 8px;
+  margin-left: 8px;
+  flex-shrink: 0;
+}
+
+.btn-burger{
+  background-image: url("../img/burger.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.btn-repair{
+  background-image: url("../img/repair.svg");
+}
+
+.btn-checkstatus{
+  background-image: url("../img/checkstatus.svg");
+}
+
+.header-menu-logo{
+  margin-left: 8px;
+  background-image: url("../img/Group.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  flex-grow: 1;
+  width: 96px;
+  height: 50px;
+}
+
+.btn-call{
+  background-image: url("../img/call.svg");
+  margin-right: 8px;
+
+  @media screen and (max-width:767px){
+    display: none;
+  }
+  }
+
+ .btn-profile{
+  background-image: url("../img/profile.svg");
+  margin-left: 8px;
+  margin-right: 10px;
+  @media screen and (max-width:767px){
+    display: none;
+  }
+ }
+
+ .btn-chat{
+  background-image: url("../img/chat.svg");
+  margin-left: 8px;
+  margin-right: 8px;
+  @media screen and (max-width:767px){
+    display: none;
+  }
+ }

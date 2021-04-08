@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.page {
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: 'TT lakes';
+  font-weight: normal;
+  font-style: normal;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (min-width: 1366px) {
+  .page-main {
+    margin-left: 320px;
+  }
+}
+/*# sourceMappingURL=page.css.map */

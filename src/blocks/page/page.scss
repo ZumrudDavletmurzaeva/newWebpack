@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+ 
+}
+
+.page{
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: 'TT lakes';
+  font-weight: normal;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.page-main{
+  @media screen and (min-width: 1366px) {
+    margin-left: 320px; 
+ 
+  }
+}

@@ -1,0 +1,129 @@
+
+.form__element-phone{
+  @media screen and (max-width:767px){
+  box-sizing: border-box;
+  height: 48px;
+  width: 288px;
+  margin: 8px 16px;
+  padding:0px;
+  border: 1px solid  #EAEAEA;
+  border-radius: 8px;}
+  @media screen and (min-width:768px)  and (max-width:1365px){
+    box-sizing: border-box;
+    height: 48px;
+    width: 376px;
+    margin: 8px 32px;
+    padding:0px;
+    border: 1px solid  #EAEAEA;
+    border-radius: 8px;
+  }
+  @media screen and (min-width:1366px) {
+    box-sizing: border-box;
+    height: 48px;
+    width: 376px;
+    margin: 8px 32px;
+    padding:0px;
+    border: 1px solid  #EAEAEA;
+    border-radius: 8px;
+  }
+}
+.form__element{
+  padding-left: 16px;
+  box-sizing: border-box;
+}
+
+.btn-close-call{
+  background-image: url("../img/burger2.svg");
+  cursor: pointer;
+  &:hover{
+    opacity: 0.7;
+  }
+}
+
+.submit-call{
+  @media screen and (max-width:767px){
+  width: 288px;
+  height: 68px;
+  margin-left: 16px;
+  margin-bottom: 16px;
+  margin-top: 8px;}
+  @media screen and (min-width:768px)  and (max-width:1365px){
+    width:376px;
+    height: 52px;
+    margin-left: 32px;
+    margin-right: 32px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+  }
+  @media screen and (min-width:1366px) {
+    width:376px;
+    height: 52px;
+    margin-left: 32px;
+    margin-right: 32px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+  }
+}
+
+
+.form-call{
+  position: fixed;
+  top: 0;
+  background-color: #FFFFFF;
+  z-index: 4;
+
+  @media screen and (max-width:767px){
+    opacity: 0;
+visibility: hidden;
+transition: all 0.6s ease-in-out;
+transform: translate(100%, 0px);
+    left: 0;
+    width: 320px;
+    flex-direction: column;
+    height: 100vh;
+    
+  }
+  @media screen and (min-width:768px)  and (max-width:1365px){
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.8s ease-in-out;
+    transform: translate(100%, 0px);
+    right: 0;
+    width: 440px;
+    box-shadow: 16px 0 52px rgba(14, 24, 80, 0.2);
+    height: 100vh;
+    flex-direction: row;
+  }
+  @media screen and (min-width:1366px) {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.8s ease-in-out;
+    transform: translate(100%, 0px);
+    right: 0;
+    width: 440px;
+    box-shadow: 16px 0 52px rgba(14, 24, 80, 0.2);
+    height: 100vh;
+    flex-direction: row;
+  }
+}
+
+
+.form-call--hidden{
+  @media screen and (max-width:767px){
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0px, 0px);
+
+}
+
+@media screen and (min-width:768px)  and (max-width:1365px){
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0px, 0px);
+}
+@media screen and (min-width:1366px) {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0px, 0px);
+}
+}

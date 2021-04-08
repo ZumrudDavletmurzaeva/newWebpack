@@ -1,0 +1,63 @@
+@media screen and (max-width: 767px) {
+  .screen-blur {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.96);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .screen-blur {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.96);
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .screen-blur {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.96);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .screen-blur--visible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .screen-blur--visible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .screen-blur--visible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+/*# sourceMappingURL=screenblur.css.map */
