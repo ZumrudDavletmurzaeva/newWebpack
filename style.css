@@ -1063,8 +1063,6 @@ html {
   @media screen and (min-width: 1366px) {
     .mobile-page {
       position: fixed;
-      top: 0;
-      left: 0;
       height: 100vh;
       z-index: 2;
       position: absolute; } }
