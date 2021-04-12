@@ -1,11 +1,29 @@
+$phone: 767px;
+$tablet1:768px;
+$tablet2:1365px;
+$desk:1366px;
+
+$borderBlue:#D9FFF5;
+$backwhite:#F2F2F2;
+$whit:#FFFFFF;
+$greytext:#7e7e82;
+$anotherBorder:#EAEAEA;
+$textcolo:#1B1C21;
+$backcol:#F8F8F8;
+$overf:725px;
+$blueb:#41F6D7;
+$backag:#B5B6BC;
+$pinkcolo: #FF3E79;
+$anotherbord:#B8FFEC;
+$grback:#B5B6BC;
 
 .header-menu{
   display: flex;
   flex-direction: row;
   height: 88px;
   align-items: center;
-  border-bottom: 1px solid #D9FFF5;
-  @media screen and (min-width:1366px) {
+  border-bottom: 1px solid $borderBlue;
+  @media screen and (min-width:$desk) {
       display: none;
     }
   
@@ -30,23 +48,23 @@
   margin-right: 8px;
 
   &:first-of-type{
-    @media screen and (max-width:767px){
+    @media screen and (max-width:$phone){
     margin-left: 16px;
     margin-right: 8px;
   }
 
-  @media screen and (min-width:768px)  and (max-width:1365px){
+  @media screen and (min-width:$tablet1)  and (max-width:$tablet2){
     margin-left: 24px;
     margin-right: 8px;
   }
 }
   &:last-of-type{
-    @media screen and  (max-width:767px){
+    @media screen and  (max-width:$phone){
     margin-right: 16px;
     margin-left: 8px;
     }
 
-    @media screen and (min-width:768px)  and (max-width:1365px){
+    @media screen and (min-width:$tablet1)  and (max-width:$tablet2){
       margin-left: 8px;
       margin-right: 24px;
     }
@@ -61,7 +79,7 @@
   margin-right: 8px;
   flex-shrink: 0;
 
-  @media screen and (max-width:767px){
+  @media screen and (max-width:$phone){
     display: none;
   }
 }
@@ -69,12 +87,12 @@
 .header-menu-divide{
   width: 2px;
   height: 32px;
-  background-color: #EAEAEA;
+  background-color: $anotherBorder;
   margin-right: 8px;
   margin-left: 8px;
   flex-shrink: 0;
 
-  @media screen and (max-width:767px){
+  @media screen and (max-width:$phone){
     display: none;
   }
 
@@ -83,7 +101,7 @@
 .header-menu-divide2{
   width: 2px;
   height: 32px;
-  background-color: #EAEAEA;
+  background-color: $anotherBorder;
   margin-right: 8px;
   margin-left: 8px;
   flex-shrink: 0;
@@ -117,7 +135,7 @@
   background-image: url("../img/call.svg");
   margin-right: 8px;
 
-  @media screen and (max-width:767px){
+  @media screen and (max-width:$phone){
     display: none;
   }
   }
@@ -126,7 +144,7 @@
   background-image: url("../img/profile.svg");
   margin-left: 8px;
   margin-right: 10px;
-  @media screen and (max-width:767px){
+  @media screen and (max-width:$phone){
     display: none;
   }
  }
@@ -135,7 +153,7 @@
   background-image: url("../img/chat.svg");
   margin-left: 8px;
   margin-right: 8px;
-  @media screen and (max-width:767px){
+  @media screen and (max-width:$phone){
     display: none;
   }
  }

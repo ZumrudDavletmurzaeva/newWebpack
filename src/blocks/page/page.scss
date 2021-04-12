@@ -1,3 +1,22 @@
+$phone: 767px;
+$tablet1:768px;
+$tablet2:1365px;
+$desk:1366px;
+
+$borderBlue:#D9FFF5;
+$backwhite:#F2F2F2;
+$whit:#FFFFFF;
+$greytext:#7e7e82;
+$anotherBorder:#EAEAEA;
+$textcolo:#1B1C21;
+$backcol:#F8F8F8;
+$overf:725px;
+$blueb:#41F6D7;
+$backag:#B5B6BC;
+$pinkcolo: #FF3E79;
+$anotherbord:#B8FFEC;
+$grback:#B5B6BC;
+
 body {
   margin: 0;
   padding: 0;
@@ -17,7 +36,7 @@ body {
 }
 
 .page-main{
-  @media screen and (min-width: 1366px) {
+  @media screen and (min-width:$desk) {
     margin-left: 320px; 
  
   }

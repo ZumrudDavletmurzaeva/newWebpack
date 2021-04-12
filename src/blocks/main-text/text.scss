@@ -1,19 +1,38 @@
+$phone: 767px;
+$tablet1:768px;
+$tablet2:1365px;
+$desk:1366px;
+
+$borderBlue:#D9FFF5;
+$backwhite:#F2F2F2;
+$whit:#FFFFFF;
+$greytext:#7e7e82;
+$anotherBorder:#EAEAEA;
+$textcolo:#1B1C21;
+$backcol:#F8F8F8;
+$overf:725px;
+$blueb:#41F6D7;
+$backag:#B5B6BC;
+$pinkcolo: #FF3E79;
+$anotherbord:#B8FFEC;
+$grback:#B5B6BC;
+
 .main{
   display: flex;
-  background-color: #F8F8F8;
+  background-color:$backcol;
   flex-direction: column;
-  color: #1B1C21;
+  color: $textcolo;
   justify-content: flex-start;
 }
 
 .main-header__services{
-  border-left: 4px solid #41F6D7;
+  border-left: 4px solid $blueb;
   font-size: 28px;
   font-weight: bold;
   font-family: 'TT lakes';
   font-style: normal;
   
-  @media screen and (min-width:1366px) {
+  @media screen and (min-width:$desk) {
     padding-left: 30px;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -22,7 +41,7 @@
 
 
 .main-header{
-  @media screen and (min-width:1366px) {
+  @media screen and (min-width:$desk) {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -38,7 +57,7 @@
 
 .main-header__link{
   text-decoration: none;
-  color:#1B1C21 ;
+  color:$textcolo;
   font-size: 16px;
   line-height: 24px;
   font-family: 'TT lakes';
@@ -59,13 +78,13 @@
 
 
 .main-header__menu{ 
-   @media screen and (max-width:767px){
+   @media screen and (max-width:$phone){
   display: none;
 }
-@media screen and (min-width:768px)  and (max-width:1365px){
+@media screen and (min-width:$tablet1)  and (max-width:$tablet2){
   display: none;
 }
-@media screen and (min-width:1366px) {
+@media screen and (min-width:$desk) {
   display: flex;
 }
 }
@@ -74,22 +93,22 @@
 
 
 .main-services{ 
-  @media screen and (max-width:767px){
+  @media screen and (max-width:$phone){
   margin-top: 24px;
 }
-@media screen and (min-width:768px)  and (max-width:1365px){
+@media screen and (min-width:$tablet1)  and (max-width:$tablet2){
 margin-top: 24px;
 margin-bottom: 16px;
 }}
 
 .main-header__services{
-  @media screen and (max-width:767px){
+  @media screen and (max-width:$phone){
   padding-left: 16px;
 }
-@media screen and (min-width:768px)  and (max-width:1365px){
+@media screen and (min-width:$tablet1)  and (max-width:$tablet2){
 
 padding-left: 24px;
-border-left: 4px solid #41F6D7;
+border-left: 4px solid $blueb;
 }
 }
 
@@ -108,12 +127,12 @@ ul{
   display: flex;
   align-items: center;
  position: relative;
-  @media screen and (max-width:767px){
+  @media screen and (max-width:$phone){
   margin-left: 16px;
   position: relative;
   align-items: center;}
 
-  @media screen and (min-width:768px)  and (max-width:1365px){
+  @media screen and (min-width:$tablet1)  and (max-width:$tablet2){
   margin-top: 16px;
   margin-left: 24px;
   margin-bottom: 16px;
@@ -126,7 +145,7 @@ ul{
 
 
 .main-navigation::after{
-@media screen and (max-width:767px){
+@media screen and (max-width:$phone){
 content: "";
 position: absolute;
 top:0;
@@ -138,7 +157,7 @@ height: 43px;
 background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
 }
 
-@media screen and (min-width:768px)  and (max-width:1365px){
+@media screen and (min-width:$tablet1)  and (max-width:$tablet2){
   content: "";
   position: absolute;
   left: 92.54%;
@@ -154,25 +173,25 @@ background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 
 
 .main-navigation__btn{
   text-decoration: none;
-  color: #7E7E82;
+  color: $greytext;
 
-  @media screen and (min-width:1366px) {
+  @media screen and (min-width:$desk) {
   font-weight: 500;
 }
 }
 
 .main-header__link{
-  @media screen and (min-width:1366px) {
+  @media screen and (min-width:$desk) {
   font-weight: 500;
 }
 }
 
 
 .main-list::-webkit-scrollbar{
-  @media screen and (max-width:767px){
+  @media screen and (max-width:$phone){
   display: none;
 }
-  @media screen and (min-width:768px)  and (max-width:1365px){
+  @media screen and (min-width:$tablet1)  and (max-width:$tablet2){
     display: none;
 }}
 
@@ -180,19 +199,19 @@ background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 
 
   display: flex;
   align-items: center;
-    @media screen and (max-width:767px){
+    @media screen and (max-width:$phone){
     overflow-x: auto;
     flex-wrap: nowrap;
     margin-bottom: 0px;
     cursor: pointer;
    }
   
-    @media screen and (min-width:768px)  and (max-width:1365px){
+    @media screen and (min-width:$tablet1)  and (max-width:$tablet2){
     overflow-x: auto;
     flex-wrap: nowrap;
     cursor: pointer;}
   
-    @media screen and (min-width:1366px) {
+    @media screen and (min-width:$desk) {
       margin-bottom: 0px;
       margin-left: 28px;
       display: flex;
@@ -203,7 +222,7 @@ background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 
   
   .navigation-list{
     border: 2px solid transparent;
-    background-color: #F8F8F8;
+    background-color: $backcol;
     font-size: 16px;
     box-sizing: border-box;
     border-radius: 6px;
@@ -217,8 +236,8 @@ background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 
   }
 
   .navigation-list:hover{
-    border: 2px solid #B8FFEC;
-    background-color: #FFFFFF;
+    border: 2px solid $anotherbord;
+    background-color: $whit;
   } 
   
 }
@@ -230,13 +249,13 @@ html{
 
 .about-company{
   display: flex;
-  @media screen and (max-width:767px){
+  @media screen and (max-width:$phone){
     flex-direction: column; 
   }
-  @media screen and (min-width:768px)  and (max-width:1365px){
+  @media screen and (min-width:$tablet1)  and (max-width:$tablet2){
     flex-direction: row;
   }
-  @media screen and (min-width:1366px) {
+  @media screen and (min-width:$desk) {
     flex-direction: row;
 
   }
@@ -256,11 +275,11 @@ width: 160px;
   margin-bottom: 10px;
   cursor: pointer;
  
-  @media screen and (min-width:768px)  and (max-width:1365px){
+  @media screen and (min-width:$tablet1)  and (max-width:$tablet2){
     margin-top: 10px;
     margin-bottom: 13px;
   }
-  @media screen and (min-width:1366px) {
+  @media screen and (min-width:$desk) {
     margin-top: 10px;
     margin-bottom: 10px;
   }
@@ -271,7 +290,7 @@ width: 160px;
   font-family: 'TT lakes';
  font-weight: normal;
  font-style: normal;
- color:#1B1C21 ;
+ color:$textcolo;
  font-size: 16px;
  font-weight: 500;
 }
@@ -282,13 +301,13 @@ width: 160px;
   font-family: 'TT lakes';
   font-style: normal;
   font-weight: normal;
-  @media screen and (max-width:767px){
+  @media screen and (max-width:$phone){
   overflow: hidden;
   line-height: 20px;
   margin-top: 0px;
   margin-bottom: 0px;
   }
-  @media screen and (min-width:768px)  and (max-width:1365px){
+  @media screen and (min-width:$tablet1)  and (max-width:$tablet2){
     overflow: hidden;
     width: 321px;
   line-height: 20px;
@@ -296,7 +315,7 @@ width: 160px;
   margin-top: 0px;
   margin-bottom: 0px;
   }
-  @media screen and (min-width:1366px) {
+  @media screen and (min-width:$desk) {
     overflow: hidden;
     line-height: 20px;
     font-size: 14px;
@@ -309,18 +328,18 @@ width: 160px;
   display: flex;
   flex-direction: column;
   flex: 1 0 100px;
-  @media screen and (max-width:767px){
+  @media screen and (max-width:$phone){
   margin-left: 16px;
   margin-right: 16px;
   margin-top: 24px;
   margin-bottom: 16px;}
 
-  @media screen and (min-width:768px)  and (max-width:1365px){
+  @media screen and (min-width:$tablet1)  and (max-width:$tablet2){
     margin-left: 24px;
     margin-right:48px ;
   }
 
-  @media screen and (min-width:1366px) {
+  @media screen and (min-width:$desk) {
     margin-left: 34px;
     margin-right: 36px;
     margin-top: 0px;
@@ -334,10 +353,10 @@ width: 160px;
   flex-grow: 1;
   flex-shrink: 0;
   
-  @media screen and (max-width:767px){
+  @media screen and (max-width:$phone){
   height: 200px;
  }
- @media screen and (min-width:768px)  and (max-width:1365px){
+ @media screen and (min-width:$tablet1)  and (max-width:$tablet2){
  flex-basis: 320px;
   border-radius: 6px;
   margin-right: 25px;  
@@ -345,7 +364,7 @@ width: 160px;
   
  }
 
- @media screen and (min-width:1366px) {
+ @media screen and (min-width:$desk) {
   flex-basis: 320px;
   margin-right:28px;
   margin-bottom: 32px;
@@ -360,14 +379,14 @@ width: 160px;
   opacity:0.7 ;
 }
 .hidtext{
-  @media screen and (max-width:767px){
+  @media screen and (max-width:$phone){
   height: 100px;
 }
 
-@media screen and (min-width:768px)  and (max-width:1365px){
+@media screen and (min-width:$tablet1)  and (max-width:$tablet2){
   height: 160px;
 }
-@media screen and (min-width:1366px) {
+@media screen and (min-width:$desk) {
   height: 160px;
 }
 }

@@ -1,19 +1,37 @@
+$phone: 767px;
+$tablet1:768px;
+$tablet2:1365px;
+$desk:1366px;
+
+$borderBlue:#D9FFF5;
+$backwhite:#F2F2F2;
+$whit:#FFFFFF;
+$greytext:#7e7e82;
+$anotherBorder:#EAEAEA;
+$textcolo:#1B1C21;
+$backcol:#F8F8F8;
+$overf:725px;
+$blueb:#41F6D7;
+$backag:#B5B6BC;
+$pinkcolo: #FF3E79;
+$anotherbord:#B8FFEC;
+$grback:#B5B6BC;
 
 .header-brends-device{
   display: flex;
   flex-direction: row;
-  border-top: 1px solid #D9FFF5;
+  border-top: 1px solid $borderBlue;
   align-items: center;
   background-image: linear-gradient(-270deg, #F8F8F8 0%, #FFFFFF 98.61%);
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width:$phone) {
     height: 80px;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1365px) {
+  @media screen and (min-width:$tablet1) and (max-width:$tablet2) {
     height: 56px;
   }
 
-  @media screen and (min-width: 1366px) {
+  @media screen and (min-width:$desk) {
     height: 56px;
   }
 
@@ -21,15 +39,15 @@
   text-transform: uppercase;
   font-size: 16px;
   line-height: 24px;
-  color: #1B1C21;
-  @media screen and (max-width: 767px) {
+  color: $textcolo;
+  @media screen and (max-width:$phone) {
     margin-left: 16px;
   }
-  @media screen and (min-width: 768px) and (max-width: 1365px) {
+  @media screen and (min-width:$tablet1) and (max-width:$tablet2) {
     margin-left: 24px;
   }
 
-  @media screen and (min-width: 1366px) {
+  @media screen and (min-width:$desk) {
     margin-left: 30px;
   }
 }
@@ -46,24 +64,24 @@
 .wrapper-device{
   display: flex;
   flex-direction: column;
-  background-color: #F2F2F2;
+  background-color: $backwhite;
  
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width:$phone) {
     height: 228px;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1365px) {
+  @media screen and (min-width:$tablet1) and (max-width:$tablet2) {
     height: 100%;
   }
 
-  @media screen and (min-width: 1366px) {
+  @media screen and (min-width:$desk) {
     height: 100%;
   }
 
 
 
 .swiper-container-device{
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width:$phone) {
   position: relative;
   width: 100%;
   height: 100%;
@@ -73,7 +91,7 @@
 
 
 .swiper-wrapper-device{
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width:$phone) {
     width: 320px;
    height: 160px;
    flex-wrap: nowrap;
@@ -83,7 +101,7 @@
     margin-top: 16px;
   
   }
-  @media screen and (min-width: 768px) and (max-width: 1365px) {
+  @media screen and (min-width:$tablet1) and (max-width:$tablet2) {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -94,7 +112,7 @@
     list-style: none;
   }
 
-  @media screen and (min-width: 1366px) {
+  @media screen and (min-width:$desk) {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -107,16 +125,16 @@
 }
 
 .swiper-wrapper-device::-webkit-scrollbar{
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width:$phone) {
   display: none;
 }
 }
 
 .swiper-slide-device{ 
   height: 160px;
-  border: 1px solid #EAEAEA;
+  border: 1px solid $anotherBorder;
   border-radius: 6px;
-  background: #FFFFFF;
+  background: $whit;
   align-items: center;
   display: flex;
   justify-content: space-between;
@@ -130,7 +148,7 @@
   }
 
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width:$phone) {
     box-sizing: border-box;
     flex-shrink: 0;
     margin-right: 16px; 
@@ -141,7 +159,7 @@
     
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1365px) {
+  @media screen and (min-width:$tablet1) and (max-width:$tablet2) {
     margin-right: 24px;
     margin-bottom: 16px;
     width: 224px;
@@ -149,7 +167,7 @@
     padding-right: 16px;
   }
 
-  @media screen and (min-width: 1366px) {
+  @media screen and (min-width:$desk) {
     margin-right: 32px;
     margin-bottom: 16px;
     width: 240px;
@@ -158,15 +176,15 @@
   }
 
   &:hover{
-    @media screen and (min-width: 768px) and (max-width: 1365px) {
+    @media screen and (min-width:$tablet1) and (max-width:$tablet2) {
       opacity: 0.7;
     }
 
-    @media screen and (min-width: 1366px) {
+    @media screen and (min-width:$desk) {
       opacity: 0.7;
     }
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width:$phone) {
       opacity: 0.7;
     }
 
@@ -176,10 +194,10 @@
 }
 
 .more-device{
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width:$phone) {
   display: none;
  }
- @media screen and (min-width: 768px) and (max-width: 1365px) {
+ @media screen and (min-width:$tablet1) and (max-width:$tablet2) {
   display: flex;
   margin-left: 24px;
   margin-bottom: 31px;
@@ -187,11 +205,11 @@
   border: transparent;
  width: 143px;
  height: 27px;
- background-color: #F2F2F2;
+ background-color: $backwhite;
  align-items: center;
  }
 
- @media screen and (min-width: 1366px) {
+ @media screen and (min-width:$desk) {
   display: flex;
   flex-direction: row;
  margin-left: 32px;
@@ -200,15 +218,15 @@
  border: transparent;
  width: 143px;
  height: 27px;
- background-color: #F2F2F2;
+ background-color: $backwhite;
   align-items: center;
  }
 
  &:hover{
-  @media screen and (min-width: 768px) and (max-width: 1365px) {
+  @media screen and (min-width:$tablet1) and (max-width:$tablet2) {
     transform: scale(1.05);
   }
-  @media screen and (min-width: 1366px) {
+  @media screen and (min-width:$desk) {
     transform: scale(1.05);
   }
  }
@@ -217,16 +235,16 @@
 
 
 .more__text-device{
-  @media screen and (min-width: 768px) and (max-width: 1365px) {
+  @media screen and (min-width:$tablet1) and (max-width:$tablet2) {
   text-decoration: none;
-  color: #1B1C21;
+  color: $textcolo;
   font-size: 16px;
   font-family: 'TT Lakes';
   font-weight: 500;
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width:$desk) {
   text-decoration: none;
-    color: #1B1C21;
+    color: $textcolo;
     font-size: 16px;
     font-family: 'TT Lakes';
     font-weight: 500;
@@ -236,50 +254,50 @@
 }
 
 .hide li:nth-child(4){
-  @media screen and (min-width: 768px) and (max-width: 1365px) {
+  @media screen and (min-width:$tablet1) and (max-width:$tablet2) {
   display: none;
 }
 }
 
 .hide li:nth-child(5){
-  @media screen and (min-width: 768px) and (max-width: 1365px) {
+  @media screen and (min-width:$tablet1) and (max-width:$tablet2) {
   display: none;
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width:$desk) {
   display: none;
 }
 }
 
 .hide li:nth-child(6){
-@media screen and (min-width: 768px) and (max-width: 1365px) {
+@media screen and (min-width:$tablet1) and (max-width:$tablet2) {
 display: none;
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width:$desk) {
 display: none;
 }
 }
 
 .hide li:nth-child(7){
-@media screen and (min-width: 768px) and (max-width: 1365px) {
+@media screen and (min-width:$tablet1) and (max-width:$tablet2) {
 display: none;
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width:$desk) {
 display: none;
 }
 }
 
 .hide li:nth-child(8){
-@media screen and (min-width: 768px) and (max-width: 1365px) {
+@media screen and (min-width:$tablet1) and (max-width:$tablet2) {
 display: none;
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width:$desk) {
 display: none;
 }
 }
 
 
 .fade-device {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width:$phone) {
   position: absolute;
   top:0;
   bottom: 0;
@@ -292,17 +310,17 @@ display: none;
   }
 
   .swiper-pagination-bullet {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width:$phone) {
     position: relative;
     top:-15px;
     width: 12px;
     height: 12px;
-   background-color: #B5B6BC;
+   background-color: $backag;
   } 
-  @media screen and (min-width: 1366px) {
+  @media screen and (min-width:$desk) {
     display: none;
     }
-    @media screen and (min-width: 768px) and (max-width: 1365px) {
+    @media screen and (min-width:$tablet1) and (max-width:$tablet2) {
       display: none;
       }
 

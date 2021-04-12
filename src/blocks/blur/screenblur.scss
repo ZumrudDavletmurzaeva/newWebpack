@@ -1,5 +1,11 @@
+$phone: 767px;
+$tablet1:768px;
+$tablet2:1365px;
+$desk:1366px;
+$backShad:rgba(255, 255, 255, 0.96);
+
 .screen-blur{
-  @media screen and (max-width:767px){
+  @media screen and (max-width:$phone){
     display: none;
     position: fixed;
     top: 0;
@@ -7,11 +13,11 @@
     z-index: 3;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(255, 255, 255, 0.96);
+    background-color:$backShad;
   }
   
 
-  @media screen and (min-width: 768px) and (max-width: 1365px) {
+  @media screen and (min-width:$tablet1) and (max-width:$tablet2) {
   display: none;
   position: fixed;
   top: 0;
@@ -19,8 +25,8 @@
   z-index: 3;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(255, 255, 255, 0.96);}
-  @media screen and (min-width: 1366px) {
+  background-color:$backShad;}
+  @media screen and (min-width:$desk) {
     display: none;
     position: fixed;
     top: 0;
@@ -28,19 +34,19 @@
     z-index: 3;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(255, 255, 255, 0.96);}
+    background-color:$backShad;}
   }
 
 
 .screen-blur--visible{
-  @media screen and (max-width:767px){
+  @media screen and (max-width:$phone){
     display: flex;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1365px) {
+  @media screen and (min-width:$tablet1) and (max-width:$tablet2) {
   display: flex;}
 
-  @media screen and (min-width: 1366px) {
+  @media screen and (min-width:$desk) {
     display: flex;
   }
 }
